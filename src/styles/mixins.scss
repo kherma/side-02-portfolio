@@ -1,0 +1,9 @@
+@import "../styles/settings.scss";
+
+@mixin paper {
+  background-color: $light;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  box-shadow: 0 0.3rem 0.7rem rgba($dark, 0.4);
+  overflow: hidden;
+}

@@ -1,0 +1,97 @@
+@import '../styles/settings.scss';
+@import '../styles/mixins.scss';
+
+.container {
+  @include paper;
+  margin: 5rem auto;
+  width: 117rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sectionTitle {
+  text-transform: uppercase;
+  margin: 1rem 2rem;
+  border-bottom: 2px solid $dark;
+}
+
+// Typography
+
+.containerTypography {
+  padding: 2rem 4rem;
+
+  .typographyContent {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  p {
+    padding: 0 3rem;
+  }
+}
+
+// Color
+
+.containerColor {
+  padding: 2rem 4rem;
+
+  .colorContent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .colorItem {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 2rem 2rem;
+    border: 1px solid $dark;
+    border-radius: 1rem;
+  }
+
+  span {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #999;
+    margin-top: 1rem;
+  }
+
+  .color1 {
+    background-color: $dark;
+  }
+  .color2 {
+    background-color: $light;
+  }
+  .color3 {
+    background-color: $grey;
+    border: 3px solid $grey-dark-1;
+  }
+  .color4 {
+    background-color: $grey-dark-1;
+    border: 3px solid $grey;
+  }
+  .color5 {
+    background-color: $red;
+  }
+  .color6 {
+    background-color: $purple;
+  }
+  .color7 {
+    background-color: $blue-dark;
+  }
+  .color8 {
+    background-color: $blue;
+  }
+  .color9 {
+    background-color: $blue-light;
+  }
+  .color10 {
+    background-color: $orange-light;
+  }
+  .color11 {
+    background-color: $orange-dark;
+  }
+}

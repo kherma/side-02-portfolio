@@ -1,0 +1,59 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.heroContainer {
+  width: 100vw;
+  height: 60vh;
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.heroTitle {
+  display: inline-block;
+  background-color: $light;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.heroTitleMain {
+  position: relative;
+  transform: translateX(-20%) translateY(-50%);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba($dark, 0.7);
+  z-index: 1;
+
+  &::before {
+    transform: rotate(-30deg);
+    bottom: 0;
+    right: -5%;
+    @include tape-effect;
+  }
+
+  &::after {
+    top: 0;
+    left: -5%;
+    transform: rotate(-25deg);
+    @include tape-effect;
+  }
+}
+
+.heroTitleSub {
+  transform: translateX(20%) translateY(45%) rotate(-3deg);
+  position: absolute;
+  &::before {
+    transform: rotate(93deg);
+    bottom: 30%;
+    right: -8%;
+    @include tape-effect;
+  }
+
+  &::after {
+    bottom: -7%;
+    left: -5%;
+    transform: rotate(10deg);
+    @include tape-effect;
+  }
+}

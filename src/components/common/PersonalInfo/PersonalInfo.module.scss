@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.personalContainer {
+  @include paper;
+  padding: 4rem;
+}
+
+.personalHeader {
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  border-bottom: 2px solid $dark;
+  margin-bottom: 4rem;
+}
+
+.personalQuote {
+  color: $grey-dark-1;
+  font-style: italic;
+  margin: 0 0.5rem;
+}
+
+.personalText {
+  margin: 2rem;
+}
+
+.personalImage {
+  width: 30rem;
+  float: left;
+  margin-right: 4rem;
+}

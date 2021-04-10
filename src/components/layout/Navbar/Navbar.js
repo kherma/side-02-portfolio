@@ -32,6 +32,15 @@ const Navbar = () => {
         .additional<span className={styles.navSpecial}>Info</span> &#x00028;
         &#x00029;
       </NavLink>
+      <NavLink
+        exact
+        to="/styleguide"
+        className={styles.navLink}
+        activeClassName={styles.active}
+      >
+        .style<span className={styles.navSpecial}>Guide</span> &#x00028;
+        &#x00029;
+      </NavLink>
     </nav>
   );
 };

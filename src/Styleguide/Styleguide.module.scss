@@ -2,8 +2,6 @@
 @import '../styles/mixins.scss';
 
 .container {
-  @include paper;
-  margin: 2rem;
   max-width: 117rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -17,7 +15,9 @@
 
 // Typography
 .containerTypography {
-  padding: 2rem 4rem;
+  margin-bottom: 4rem;
+  padding: 2rem 4rem 4rem 4rem;
+  @include paper;
 
   .typographyContent {
     margin: 3rem 0;
@@ -34,17 +34,18 @@
 // Color
 
 .containerColor {
-  padding: 2rem 4rem;
+  @include paper;
+  padding: 2rem 4rem 4rem 4rem;
 
   .colorContent {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .colorItem {
     text-align: center;
     padding: 1rem 0;
-    margin: 2rem 2rem;
+    margin: 2rem;
     border: 1px solid $dark;
     border-radius: 1rem;
   }

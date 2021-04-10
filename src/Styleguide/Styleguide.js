@@ -30,8 +30,8 @@ const StyleSheet = () => {
       <div className={styles.containerColor}>
         <h2 className={styles.sectionTitle}>color</h2>
         <div className={styles.colorContent}>
-          {data.map(({ id, itemClass, hex, varName }) => (
-            <div key={id} className={styles.colorItem}>
+          {data.map(({ itemClass, hex, varName }) => (
+            <div key={hex} className={styles.colorItem}>
               <span className={itemClass}></span>
               <p>{hex}</p>
               <p>{varName}</p>

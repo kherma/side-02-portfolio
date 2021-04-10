@@ -2,76 +2,64 @@ import styles from './Styleguide.module.scss';
 
 const data = [
   {
-    id: '1',
-    itemClass: styles.color1,
+    itemClass: styles.colorDark,
     hex: '#000000',
     varName: '$dark',
   },
   {
-    id: '2',
-    itemClass: styles.color2,
+    itemClass: styles.colorLight,
     hex: '#ffffff',
     varName: '$light',
   },
   {
-    id: '3',
-    itemClass: styles.color3,
+    itemClass: styles.colorGrey,
     hex: '#999999',
     varName: '$grey',
   },
   {
-    id: '4',
-    itemClass: styles.color4,
+    itemClass: styles.colorGreyDark1,
     hex: '#777777',
     varName: '$grey-dark-1',
   },
   {
-    id: '5',
-    itemClass: styles.color5,
-    hex: '#BF565F',
-    varName: '$red',
-  },
-  {
-    id: '6',
-    itemClass: styles.color6,
+    itemClass: styles.colorPurple,
     hex: '#383A59',
     varName: '$purple',
   },
   {
-    id: '7',
-    itemClass: styles.color7,
+    itemClass: styles.colorBlueDark,
     hex: '#2C3140',
     varName: '$blue-dark',
   },
   {
-    id: '8',
-    itemClass: styles.color8,
+    itemClass: styles.colorBlue,
     hex: '#466273',
     varName: '$blue',
   },
   {
-    id: '9',
-    itemClass: styles.color9,
+    itemClass: styles.colorBlueLight,
     hex: '#659AA6',
     varName: '$blue-light',
   },
   {
-    id: '10',
-    itemClass: styles.color10,
+    itemClass: styles.colorRed,
+    hex: '#BF565F',
+    varName: '$red',
+  },
+  {
+    itemClass: styles.colorRedLight,
+    hex: '#F24472',
+    varName: '$red-light',
+  },
+  {
+    itemClass: styles.colorOrangeLight,
     hex: '#D9BFB0',
     varName: '$orange-light',
   },
   {
-    id: '11',
-    itemClass: styles.color11,
+    itemClass: styles.colorOrangeDark,
     hex: '#D9A491',
     varName: '$orange-dark',
-  },
-  {
-    id: '12',
-    itemClass: styles.color12,
-    hex: '#F24472',
-    varName: '$red-light',
   },
 ];
 

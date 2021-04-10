@@ -59,42 +59,42 @@
     margin-top: 1rem;
   }
 
-  .color1 {
+  .colorDark {
     background-color: $dark;
   }
-  .color2 {
+  .colorLight {
     background-color: $light;
   }
-  .color3 {
+  .colorGrey {
     background-color: $grey;
     border: 3px solid $grey-dark-1;
   }
-  .color4 {
+  .colorGreyDark1 {
     background-color: $grey-dark-1;
     border: 3px solid $grey;
   }
-  .color5 {
+  .colorRed {
     background-color: $red;
   }
-  .color6 {
+  .colorPurple {
     background-color: $purple;
   }
-  .color7 {
+  .colorBlueDark {
     background-color: $blue-dark;
   }
-  .color8 {
+  .colorBlue {
     background-color: $blue;
   }
-  .color9 {
+  .colorBlueLight {
     background-color: $blue-light;
   }
-  .color10 {
+  .colorOrangeLight {
     background-color: $orange-light;
   }
-  .color11 {
+  .colorOrangeDark {
     background-color: $orange-dark;
   }
-  .color12 {
+  .colorRedLight {
     background-color: $red-light;
   }
 }

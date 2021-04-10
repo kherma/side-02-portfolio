@@ -4,7 +4,7 @@ import ProfilePhoto from '../../../images/profile.jpg';
 
 const PersonalInfo = () => {
   return (
-    <section className={styles.personalContainer}>
+    <article className={styles.personalContainer}>
       <h3 className={styles.personalHeader}>A letter you might also skip</h3>
 
       <img
@@ -43,7 +43,7 @@ const PersonalInfo = () => {
         . It took me a long time and a lot of failure but it was and still is
         worth it.
       </p>
-    </section>
+    </article>
   );
 };
 

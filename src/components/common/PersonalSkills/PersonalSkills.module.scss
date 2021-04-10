@@ -1,0 +1,65 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.personalContainer {
+  @include paper;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.personalHeader {
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  border-bottom: 2px solid $dark;
+}
+
+.stackSection {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  padding-bottom: 4rem;
+  margin-top: 4rem;
+  &:not(:last-of-type) {
+    border-bottom: 2px solid $grey;
+  }
+}
+
+.stackItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  border: 1px solid $dark;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  font-size: 3rem;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $blue-dark;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.stackText {
+  color: $dark;
+  text-transform: uppercase;
+}

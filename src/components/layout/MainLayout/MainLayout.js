@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './MainLayout.module.scss';
 
 import Hero from '../../layout/Hero/Hero';
-// import VorpLogo from '../../common/VorpLogo/VorpLogo';
+import VorpLogo from '../../common/VorpLogo/VorpLogo';
 
 const MainLayout = ({ children }) => {
   return (
     <div className={styles.pageLayout}>
       <header className={styles.pageHeader}>
-        {/* <VorpLogo /> */}
+        <VorpLogo />
         <Hero />
       </header>
       <main className={styles.pageMain}>{children}</main>

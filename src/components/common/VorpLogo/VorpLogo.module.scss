@@ -7,14 +7,14 @@
   align-items: center;
   position: fixed;
   z-index: 20;
-  top: 10%;
+  top: 7%;
   left: 5%;
 }
 
 .vorpGears {
   background: radial-gradient($purple, $blue-dark, $blue, $blue-light, $light);
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   position: relative;
   -webkit-clip-path: polygon(
     40% 0%,
@@ -71,25 +71,32 @@
   border-radius: 50%;
   transition: all 2s;
   border: 5px solid $blue;
+  // animation: grars-anim 20s linear infinite;
+}
+
+@keyframes grars-anim {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .vorpBody {
   position: absolute;
-  width: 70px;
-  height: 70px;
-  background: radial-gradient($purple, $blue-dark, $blue, $blue-light, $light);
+  width: 150px;
+  height: 150px;
+  background: radial-gradient($blue, $blue-light);
   border-radius: 50%;
   z-index: 10;
-  border-top: 5px solid transparent;
-  border-left: 5px solid $grey-dark-1;
-  border-bottom: 5px solid transparent;
-  border-right: 5px solid $grey-dark-1;
+  border-top: 10px solid transparent;
+  border-left: 10px solid $blue-dark;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid $blue-dark;
 }
 
 .vorpFill {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background-color: $light;
   border-radius: 50%;
   z-index: 20;
@@ -97,44 +104,62 @@
 
 .vorpLids {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background-color: transparent;
   border-radius: 50%;
   z-index: 40;
-  border-top: 25px solid $blue-dark;
-  border-bottom: 25px solid $blue-dark;
-  animation: eye-anim 5s 3s linear infinite;
+  border-top: 50px solid $blue-dark;
+  border-bottom: 50px solid $blue-dark;
+  // animation: lids-happy 2s linear forwards;
 }
 
-@keyframes eye-anim {
-  5% {
-    border-top: 10px solid $blue-dark;
-    border-bottom: 10px solid $blue-dark;
-  }
-  20% {
-    border-top: 25px solid $blue-dark;
-    border-bottom: 25px solid $blue-dark;
-  }
-  40% {
-    border-top: 20px solid $blue-dark;
-    border-bottom: 5px solid $blue-dark;
-  }
-  60% {
+@keyframes lids-happy {
+  0% {
     border-top: 15px solid $blue-dark;
-    border-bottom: 10px solid $blue-dark;
+    border-bottom: 15px solid $blue-dark;
   }
-  80% {
-    border-top: 1px solid $blue-dark;
-    border-bottom: 1px solid $blue-dark;
+  30% {
+    border-top: 25px solid $blue-dark;
+    border-bottom: 35px solid $blue-dark;
+  }
+  70% {
+    border-top: 25px solid $blue-dark;
+    border-bottom: 35px solid $blue-dark;
+  }
+  90% {
+    border-top: 20px solid $blue-dark;
+    border-bottom: 20px solid $blue-dark;
   }
 }
 
 .vorpEye {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient($purple, $blue-dark, $blue, $blue-light, $light);
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(
+    $red,
+    $orange-dark,
+    $red-light,
+    $orange-light,
+    $light
+  );
   border-radius: 50%;
   z-index: 20;
+  // animation: eye-happy 2s linear forwards;
+}
+
+@keyframes eye-happy {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(0, -5px) scale(1.3);
+  }
+  60% {
+    transform: translate(0, -5px) scale(1.3);
+  }
+  90% {
+    transform: translate(0, 0) scale(1);
+  }
 }

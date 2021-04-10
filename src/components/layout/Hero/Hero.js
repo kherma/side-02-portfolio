@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Hero.module.scss';
 import Navbar from '../Navbar/Navbar.js';
+import ContactOptions from '../../features/ContactOptions/ContactOptions';
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           <h2>Web Developer</h2>
         </div>
       </div>
-      <div className={styles.heroContact}></div>
+      <ContactOptions />
     </div>
   );
 };

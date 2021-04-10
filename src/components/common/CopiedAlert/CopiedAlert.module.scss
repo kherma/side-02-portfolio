@@ -1,0 +1,33 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.alertContainer {
+  position: fixed;
+  background-color: $red-light;
+  color: $light;
+  text-transform: uppercase;
+  box-shadow: 0.5rem 0.5rem 0 $grey;
+  z-index: 100;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem 4rem;
+  transition: all 0.3s;
+  opacity: 0;
+  animation: fade-in 5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

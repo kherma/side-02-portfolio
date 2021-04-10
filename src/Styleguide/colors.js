@@ -67,6 +67,12 @@ const data = [
     hex: '#D9A491',
     varName: '$orange-dark',
   },
+  {
+    id: '12',
+    itemClass: styles.color12,
+    hex: '#F24472',
+    varName: '$red-light',
+  },
 ];
 
 export default data;

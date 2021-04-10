@@ -3,8 +3,8 @@
 
 .container {
   @include paper;
-  margin: 5rem auto;
-  width: 117rem;
+  margin: 2rem;
+  max-width: 117rem;
   display: grid;
   grid-template-columns: 1fr;
 }

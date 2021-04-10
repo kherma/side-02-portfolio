@@ -1,0 +1,140 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.vorpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 20;
+  top: 10%;
+  left: 5%;
+}
+
+.vorpGears {
+  background: radial-gradient($purple, $blue-dark, $blue, $blue-light, $light);
+  height: 100px;
+  width: 100px;
+  position: relative;
+  -webkit-clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 24%,
+    85% 0,
+    100% 15%,
+    74% 40%,
+    100% 40%,
+    100% 60%,
+    74% 60%,
+    100% 85%,
+    85% 100%,
+    60% 74%,
+    60% 100%,
+    40% 100%,
+    40% 74%,
+    15% 100%,
+    0 85%,
+    24% 60%,
+    0 60%,
+    0 40%,
+    24% 40%,
+    0 15%,
+    15% 0,
+    40% 24%
+  );
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 24%,
+    85% 0,
+    100% 15%,
+    74% 40%,
+    100% 40%,
+    100% 60%,
+    74% 60%,
+    100% 85%,
+    85% 100%,
+    60% 74%,
+    60% 100%,
+    40% 100%,
+    40% 74%,
+    15% 100%,
+    0 85%,
+    24% 60%,
+    0 60%,
+    0 40%,
+    24% 40%,
+    0 15%,
+    15% 0,
+    40% 24%
+  );
+  border-radius: 50%;
+  transition: all 2s;
+  border: 5px solid $blue;
+}
+
+.vorpBody {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient($purple, $blue-dark, $blue, $blue-light, $light);
+  border-radius: 50%;
+  z-index: 10;
+  border-top: 5px solid transparent;
+  border-left: 5px solid $grey-dark-1;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid $grey-dark-1;
+}
+
+.vorpFill {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: $light;
+  border-radius: 50%;
+  z-index: 20;
+}
+
+.vorpLids {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 40;
+  border-top: 25px solid $blue-dark;
+  border-bottom: 25px solid $blue-dark;
+  animation: eye-anim 5s 3s linear infinite;
+}
+
+@keyframes eye-anim {
+  5% {
+    border-top: 10px solid $blue-dark;
+    border-bottom: 10px solid $blue-dark;
+  }
+  20% {
+    border-top: 25px solid $blue-dark;
+    border-bottom: 25px solid $blue-dark;
+  }
+  40% {
+    border-top: 20px solid $blue-dark;
+    border-bottom: 5px solid $blue-dark;
+  }
+  60% {
+    border-top: 15px solid $blue-dark;
+    border-bottom: 10px solid $blue-dark;
+  }
+  80% {
+    border-top: 1px solid $blue-dark;
+    border-bottom: 1px solid $blue-dark;
+  }
+}
+
+.vorpEye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient($purple, $blue-dark, $blue, $blue-light, $light);
+  border-radius: 50%;
+  z-index: 20;
+}

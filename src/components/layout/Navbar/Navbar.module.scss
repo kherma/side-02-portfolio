@@ -1,42 +1,42 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: $light;
-  z-index: 10;
-  width: 100%;
-  height: 100px;
+.navLinks {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  background: $light;
-  border-radius: 50%;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
 }
 
 .navLinks .navLink {
-  color: $grey;
-  padding: 1.5rem 2rem;
-  margin: 0 1rem;
-  font-size: 2rem;
-  transition: all 0.3s;
-  border-bottom: 3px solid $grey;
-  &:hover {
-    background: $blue-dark;
+  &:link,
+  &:visited {
+    background-color: $light;
+    box-shadow: 0.5rem 0.5rem 0 $blue-light;
+    margin: 2rem 4rem;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    color: $dark;
+    transition: all 0.3s;
   }
-}
 
-.navLink.active {
-  color: $light;
-  border-color: $light;
-}
-.navLink.active .navSpecial {
-  color: $red;
+  &:hover {
+    box-shadow: 0.6rem 0.6rem 0 $orange-dark;
+    & .navSpecial {
+      color: $orange-dark;
+    }
+  }
+
+  &.active {
+    box-shadow: 0.7rem 0.7rem 0 $red-light;
+    & .navSpecial {
+      color: $red-light;
+    }
+  }
+  & .navSpecial {
+    text-transform: uppercase;
+    color: $blue-light;
+    transition: all 0.3s;
+  }
 }

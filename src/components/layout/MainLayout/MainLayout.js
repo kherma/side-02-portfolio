@@ -1,13 +1,17 @@
 import React from 'react';
 import styles from './MainLayout.module.scss';
 
-import Navbar from '../Navbar/Navbar.js';
+import Hero from '../../layout/Hero/Hero';
+import VorpLogo from '../../common/VorpLogo/VorpLogo';
 
 const MainLayout = ({ children }) => {
   return (
-    <div>
-      <Navbar />
-      {children}
+    <div className={styles.pageLayout}>
+      <header className={styles.pageHeader}>
+        {/* <VorpLogo /> */}
+        <Hero />
+      </header>
+      <main className={styles.pageMain}>{children}</main>
     </div>
   );
 };

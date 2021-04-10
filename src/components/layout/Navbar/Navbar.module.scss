@@ -22,14 +22,23 @@
   }
 
   &:hover {
-    box-shadow: 0.6rem 0.6rem 0 $orange-dark;
+    box-shadow: 0.7rem 0.7rem 0 $orange-dark;
+    transform: translate(-0.2rem, -0.2rem);
     & .navSpecial {
       color: $orange-dark;
     }
   }
 
+  &:active {
+    box-shadow: 0 0 0 $orange-dark;
+    transform: translate(-0.2rem, -0.2rem);
+  }
+
   &.active {
     box-shadow: 0.7rem 0.7rem 0 $red-light;
+    &:hover {
+      transform: translate(0);
+    }
     & .navSpecial {
       color: $red-light;
     }

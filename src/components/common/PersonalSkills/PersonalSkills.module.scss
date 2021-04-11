@@ -1,18 +1,6 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
 
-.personalContainer {
-  @include paper;
-  padding: 4rem;
-  margin-bottom: 4rem;
-}
-
-.personalHeader {
-  text-transform: uppercase;
-  font-weight: $font-bold;
-  border-bottom: 2px solid $dark;
-}
-
 .stackSection {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

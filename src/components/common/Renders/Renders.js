@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Renders.module.scss';
+import ArticlePaper from '../ArticlePaper/ArticlePaper';
 import renders from './rendersData';
 
 const Renders = () => {
   return (
-    <article className={styles.articleContainer}>
-      <h3 className={styles.articlelHeader}>3D renders</h3>
-      <div className={styles.renderContainer}>
+    <ArticlePaper title="3d renders">
+      <section className={styles.renderContainer}>
         {renders.map(({ render, renderSQ, id }, index) => (
           <div className={styles.renderGroup} key={id}>
             {index % 2 === 0 ? (
@@ -22,8 +22,8 @@ const Renders = () => {
             )}
           </div>
         ))}
-      </div>
-    </article>
+      </section>
+    </ArticlePaper>
   );
 };
 

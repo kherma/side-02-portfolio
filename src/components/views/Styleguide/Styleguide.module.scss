@@ -1,23 +1,14 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
 
-.container {
-  max-width: 117rem;
-  display: grid;
-  grid-template-columns: 1fr;
-}
+.styleguideContainer {
+  .sectionTitle {
+    text-transform: uppercase;
+    margin: 1rem 2rem;
+    border-bottom: 2px solid $dark;
+  }
 
-.sectionTitle {
-  text-transform: uppercase;
-  margin: 1rem 2rem;
-  border-bottom: 2px solid $dark;
-}
-
-// Typography
-.containerTypography {
-  margin-bottom: 4rem;
-  padding: 2rem 4rem 4rem 4rem;
-  @include paper;
+  // Typography
 
   .typographyContent {
     margin: 3rem 0;
@@ -26,16 +17,7 @@
     align-items: center;
   }
 
-  p {
-    padding: 0 3rem;
-  }
-}
-
-// Color
-
-.containerColor {
-  @include paper;
-  padding: 2rem 4rem 4rem 4rem;
+  // Color
 
   .colorContent {
     display: grid;

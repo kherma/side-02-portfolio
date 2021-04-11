@@ -1,25 +1,23 @@
 import React from 'react';
 import styles from './PersonalSoft.module.scss';
-import cert1 from '../../../images/cert-1.jpg';
-import cert2 from '../../../images/cert-2.jpg';
+import ArticlePaper from '../ArticlePaper/ArticlePaper';
+import certifications from './softData';
 
 const PersonalSoft = () => {
   return (
-    <article className={styles.personalContainer}>
-      <h3 className={styles.personalHeader}>others</h3>
+    <ArticlePaper title="others">
       <section className={styles.skillsContainer}>
         <div className={styles.skillsCertification}>
           <figure className={styles.skillsCertificationItem}>
-            <img
-              src={cert1}
-              alt="design thinking certification"
-              className={styles.skillsCertificationImg}
-            />
-            <img
-              src={cert2}
-              alt="design thinking certification"
-              className={styles.skillsCertificationImg}
-            />
+            {certifications.map(({ source, text, id }) => (
+              <img
+                key={id}
+                src={source}
+                alt={text}
+                className={styles.skillsCertificationImg}
+              />
+            ))}
+
             <figcaption>
               Design Thinking Workshop
               <span className={styles.skillsCertificationData}>
@@ -39,7 +37,7 @@ const PersonalSoft = () => {
           </p>
         </div>
       </section>
-    </article>
+    </ArticlePaper>
   );
 };
 

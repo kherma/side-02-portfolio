@@ -1,14 +1,11 @@
 import React from 'react';
-import styles from './AdditionalIntro.module.scss';
+import ArticlePaper from '../ArticlePaper/ArticlePaper';
 
 const AdditionalIntro = () => {
   return (
-    <article className={styles.articleContainer}>
-      <h3 className={styles.articlelHeader}>1 + &#x221e;</h3>
-      <p className={styles.articleText}>
-        Apart from programming, I also do other things...
-      </p>
-    </article>
+    <ArticlePaper title="1 + &#x221e;">
+      <p>Apart from programming, I also do other things...</p>
+    </ArticlePaper>
   );
 };
 

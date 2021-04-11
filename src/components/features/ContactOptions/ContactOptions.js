@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './ContactOptions.module.scss';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
-import CopiedAlert from '../../common/CopiedAlert/CopiedAlert';
+import CopiedAlert from '../../features/CopiedAlert/CopiedAlert';
 
 const ContactOptions = () => {
   const [alert, setAlert] = useState(false);
@@ -18,7 +18,6 @@ const ContactOptions = () => {
   return (
     <div className={styles.heroContact}>
       {alert && <CopiedAlert />}
-      {/* <CopiedAlert /> */}
       <ul>
         <li>
           <a href="https://github.com/kherma" target="_blank" rel="noreferrer">

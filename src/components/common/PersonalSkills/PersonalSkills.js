@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './PersonalSkills.module.scss';
 import data from './skillsData';
+import ArticlePaper from '../ArticlePaper/ArticlePaper';
+
 const PersonalSkills = () => {
   return (
-    <article className={styles.personalContainer}>
-      <h3 className={styles.personalHeader}>TechStack</h3>
+    <ArticlePaper title="TechStack">
       {data.map(({ stack, id }) => (
         <section className={styles.stackSection} key={id}>
           {stack.map(({ name, Icon, color }) => (
@@ -19,7 +20,7 @@ const PersonalSkills = () => {
           ))}
         </section>
       ))}
-    </article>
+    </ArticlePaper>
   );
 };
 

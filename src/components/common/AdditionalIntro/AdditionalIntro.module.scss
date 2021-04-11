@@ -1,0 +1,61 @@
+@import '../../../styles/settings.scss';
+
+.quoteContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 30rem;
+  width: 100%;
+  font-family: $font-sub;
+
+  ul {
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba($dark, 0.3);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: $red-light;
+      top: 0;
+      right: 25%;
+    }
+  }
+
+  .notebookLine {
+    width: 100%;
+    height: 2px;
+    background-color: $blue-light;
+  }
+}
+
+.text,
+.quote {
+  position: absolute;
+  font-size: 3rem;
+  color: $blue;
+  line-height: 1.5;
+}
+.text {
+  width: 60%;
+  left: 10%;
+  top: 23%;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-weight: $font-bold;
+  width: 20%;
+  right: 3%;
+  top: 9%;
+}

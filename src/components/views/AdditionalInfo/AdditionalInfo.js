@@ -9,10 +9,10 @@ import Filmmaking from '../../common/Filmmaking/Filmmaking';
 const AdditionalInfo = () => {
   return (
     <div className={styles.additionalInfo}>
-      <Filmmaking />
       <AdditionalIntro />
       <Renders />
       <Theatre />
+      <Filmmaking />
     </div>
   );
 };

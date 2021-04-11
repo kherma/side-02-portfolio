@@ -3,10 +3,9 @@ import styles from './Filmmaking.module.scss';
 import ArticlePaper from '../ArticlePaper/ArticlePaper';
 import { FaYoutube } from 'react-icons/fa';
 import movies from './moviesData';
-import Loading from '../../features/Loading/Loading';
 
 const Filmmaking = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [currenMovie, setCurrentMovie] = useState(null);
   const [playlist, setPlaylist] = useState(null);
 
@@ -15,16 +14,23 @@ const Filmmaking = () => {
   }, []);
 
   const updatePlaylist = (itemID) => {
-    setIsLoading(true);
-    const newMovie = movies.find(({ id }) => id === itemID);
-    const newPlaylist = movies.filter(({ id }) => id !== itemID);
-    setCurrentMovie(newMovie);
-    setPlaylist(newPlaylist);
     setIsLoading(false);
+    const newMovie = movies.find(({ id }) => id === itemID);
+    const newPlaylist = currenMovie
+      ? playlist.filter(({ id }) => id !== itemID)
+      : movies.filter(({ id }) => id !== itemID);
+    currenMovie
+      ? setPlaylist([...newPlaylist, currenMovie])
+      : setPlaylist(newPlaylist);
+    setCurrentMovie(newMovie);
+    setIsLoading(true);
   };
 
   return (
-    <ArticlePaper title="filmmaking (polish too)">
+    <ArticlePaper
+      title="filmmaking 
+    (Warning! #Polish)"
+    >
       <section className={styles.ytContainer}>
         <h5 className={styles.ytLogo}>
           <FaYoutube />{' '}
@@ -33,9 +39,7 @@ const Filmmaking = () => {
           </p>
         </h5>
         <div className={styles.movieBox}>
-          {isLoading ? (
-            <Loading />
-          ) : (
+          {isLoading && (
             <>
               <figure className={styles.ytMovieContainer}>
                 <iframe
@@ -58,9 +62,7 @@ const Filmmaking = () => {
           )}
         </div>
         <aside className={styles.playlistContainer}>
-          {isLoading ? (
-            <Loading />
-          ) : (
+          {isLoading &&
             playlist.map(({ id, picture, title }) => (
               <div
                 className={styles.playlistItem}
@@ -76,8 +78,7 @@ const Filmmaking = () => {
                 />
                 <p className={styles.playlistTitle}>{title}</p>
               </div>
-            ))
-          )}
+            ))}
         </aside>
       </section>
     </ArticlePaper>

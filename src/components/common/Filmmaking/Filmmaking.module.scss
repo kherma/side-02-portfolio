@@ -15,6 +15,7 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  overflow: hidden;
 
   .playlistItem {
     width: 100%;
@@ -23,9 +24,17 @@
     justify-content: center;
     align-items: center;
     color: $light;
-    transition: all 0.3s;
+    transform: translateY(100%);
+    transition: all 1s;
+    animation: slide 1s forwards;
     &:hover {
-      background-color: #333;
+      background-color: $purple;
+    }
+  }
+
+  @keyframes slide {
+    100% {
+      transform: translateY(0);
     }
   }
 

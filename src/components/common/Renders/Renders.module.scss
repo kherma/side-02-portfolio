@@ -1,19 +1,6 @@
 @import '../../../styles/settings.scss';
 @import '../../../styles/mixins.scss';
 
-.articleContainer {
-  @include paper;
-  padding: 4rem;
-  margin-bottom: 4rem;
-}
-
-.articlelHeader {
-  text-transform: uppercase;
-  font-weight: $font-bold;
-  border-bottom: 2px solid $dark;
-  margin-bottom: 4rem;
-}
-
 .renderGroup {
   display: flex;
   justify-content: space-around;

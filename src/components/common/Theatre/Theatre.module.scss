@@ -1,0 +1,80 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.posters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & .posterItem {
+    padding: 2rem 0;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0.3rem 0.3rem 0.7rem rgba($dark, 0.3);
+    background-color: #f4f4f4;
+    position: relative;
+  }
+  & .posterTitle {
+    font-style: normal;
+    font-size: 3rem;
+    color: $light;
+    background-color: $dark;
+    padding: 1rem 2rem;
+    text-shadow: 0.2rem 0.2rem 0 $red-light;
+    width: 100%;
+  }
+
+  & .imageContainer {
+    height: 100%;
+    padding: 1rem;
+    margin: 3rem 0;
+    position: relative;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.5);
+    background-color: rgba($blue-light, 0.1);
+    border-top: 1px solid rgba($light, 0.5);
+    border-left: 1px solid rgba($light, 0.5);
+  }
+  & .posterImg {
+    height: 30rem;
+  }
+  & figcaption {
+    text-transform: uppercase;
+    background-color: $dark;
+    color: $light;
+    padding: 2rem 4rem;
+    font-weight: $font-bold;
+  }
+  & .posterGroup {
+    color: $dark;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    font-weight: $font-light;
+    background-color: $light;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  & .posterLink {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    background-color: $dark;
+    padding: 1rem;
+    color: $blue-light;
+    font-weight: $font-bold;
+    transition: all 1s;
+
+    &:hover {
+      color: $blue;
+      background-color: $light;
+      box-shadow: 0.2rem 0.2rem 0.2rem rgba($dark, 0.3);
+    }
+  }
+}

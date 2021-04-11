@@ -14,7 +14,7 @@
     flex-direction: column;
     text-align: center;
     box-shadow: 0.3rem 0.3rem 0.7rem rgba($dark, 0.3);
-    background-color: #f4f4f4;
+    background-color: $grey-light-1;
     position: relative;
   }
   & .posterTitle {

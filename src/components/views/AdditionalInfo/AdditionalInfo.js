@@ -5,6 +5,7 @@ import AdditionalIntro from '../../common/AdditionalIntro/AdditionalIntro';
 import Renders from '../../common/Renders/Renders';
 import Theatre from '../../common/Theatre/Theatre';
 import Filmmaking from '../../common/Filmmaking/Filmmaking';
+import Memes from '../../common/Memes/Memes';
 
 const AdditionalInfo = () => {
   return (
@@ -13,6 +14,7 @@ const AdditionalInfo = () => {
       <Renders />
       <Theatre />
       <Filmmaking />
+      <Memes />
     </div>
   );
 };

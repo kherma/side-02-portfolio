@@ -5,6 +5,17 @@
   @include paper;
   padding: 4rem;
   margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: onshow 1s forwards;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes onshow {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .articleHeader {

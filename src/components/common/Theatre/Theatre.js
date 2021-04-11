@@ -5,7 +5,7 @@ import posters from './postersData';
 
 const Theatre = () => {
   return (
-    <ArticlePaper title="theatre">
+    <ArticlePaper title="theatre (polish)">
       <section className={styles.posters}>
         {posters.map(({ id, title, image, altText, group, place, linkTo }) => (
           <figure className={styles.posterItem} key={id}>

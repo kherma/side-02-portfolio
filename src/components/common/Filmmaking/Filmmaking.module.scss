@@ -1,0 +1,122 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.ytContainer {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  box-shadow: 0.35rem 0.3rem 0.5rem rgba($dark, 0.5);
+}
+
+.playlistContainer {
+  z-index: 1;
+  background-color: #222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  .playlistItem {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #333;
+    }
+  }
+
+  .playlistPicture {
+    display: inline-block;
+    width: 45%;
+    height: 70%;
+    background-color: $grey;
+    flex-shrink: 0;
+    margin-right: 1rem;
+  }
+
+  .playlistTitle {
+    font-size: 1.3rem;
+    width: 45%;
+  }
+}
+
+.ytLogo {
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $red-light;
+  background-color: #333;
+  padding: 2rem 4rem;
+  box-shadow: 0 0.3rem 0.3rem rgba($dark, 0.3);
+  grid-column: 1 / 10;
+
+  .logoText {
+    color: $light;
+    margin-left: 1rem;
+    font-weight: $font-bold;
+  }
+
+  & sup {
+    color: $grey;
+    text-transform: uppercase;
+  }
+}
+
+.movieBox {
+  background-color: #111;
+  color: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .ytMovieContainer {
+    padding: 4rem;
+    width: 100%;
+
+    figcaption {
+      text-align: left;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+      font-weight: $font-regular;
+    }
+  }
+
+  .ytMovie {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .commentsSection {
+    width: 100%;
+    border-top: 1px solid $grey;
+    padding: 2rem 4rem;
+
+    .commentContainer {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .commentPicture {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: $purple;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .commentText {
+      margin-left: 1rem;
+      font-weight: $font-light;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/mixins.scss';
+
+.loading {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border-top: 10px solid $red-light;
+  border-right: 10px solid $light;
+  border-bottom: 10px solid $light;
+  border-left: 10px solid $light;
+  margin: 10rem;
+  animation: loading 3s infinite linear;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}

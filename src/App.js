@@ -7,7 +7,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import PersonalData from './components/views/PersonalData/PersonalData';
 
-const Styleguide = lazy(() => import('./Styleguide/Styleguide'));
+const Styleguide = lazy(() =>
+  import('./components/views/Styleguide/Styleguide')
+);
 const AdditionalInfo = lazy(() =>
   import('./components/views/AdditionalInfo/AdditionalInfo')
 );

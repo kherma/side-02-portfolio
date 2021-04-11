@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Styleguide.module.scss';
-import data from './colors';
+import data from './colorsData';
 
 const StyleSheet = () => {
   return (

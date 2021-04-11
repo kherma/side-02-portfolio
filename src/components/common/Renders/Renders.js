@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Renders.module.scss';
-import renders from './rendersImages';
+import renders from './rendersData';
 
 const Renders = () => {
   return (

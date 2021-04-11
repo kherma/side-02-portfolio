@@ -1,14 +1,16 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // ===========
 // Views
 // ===========
 import MainLayout from './components/layout/MainLayout/MainLayout';
 import PersonalData from './components/views/PersonalData/PersonalData';
-// import Styleguide from './Styleguide/Styleguide';
 
 const Styleguide = lazy(() => import('./Styleguide/Styleguide'));
+const AdditionalInfo = lazy(() =>
+  import('./components/views/AdditionalInfo/AdditionalInfo')
+);
 
 const App = () => {
   return (
@@ -16,9 +18,9 @@ const App = () => {
       <MainLayout>
         <Switch>
           <Suspense fallback={<h2>Loading Page...</h2>}>
-            <Redirect exact from="/" to="/personaldata" />
-            <Route path="/personaldata" component={PersonalData} />
+            <Route exact path="/" component={PersonalData} />
             <Route path="/styleguide" component={Styleguide} />
+            <Route path="/additionalinfo" component={AdditionalInfo} />
           </Suspense>
         </Switch>
       </MainLayout>

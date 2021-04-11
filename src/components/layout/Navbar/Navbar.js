@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className={styles.navLinks}>
       <NavLink
         exact
-        to="/personaldata"
+        to="/"
         className={styles.navLink}
         activeClassName={styles.active}
       >

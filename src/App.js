@@ -14,6 +14,10 @@ const AdditionalInfo = lazy(() =>
   import('./components/views/AdditionalInfo/AdditionalInfo')
 );
 
+const ProjectsDir = lazy(() =>
+  import('./components/views/ProjectsDir/ProjectsDir')
+);
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,6 +27,7 @@ const App = () => {
             <Route exact path="/" component={PersonalData} />
             <Route path="/styleguide" component={Styleguide} />
             <Route path="/additionalinfo" component={AdditionalInfo} />
+            <Route path="/projects" component={ProjectsDir} />
           </Suspense>
         </Switch>
       </MainLayout>

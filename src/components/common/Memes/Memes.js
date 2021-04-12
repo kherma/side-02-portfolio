@@ -7,8 +7,9 @@ const Memes = () => {
   return (
     <ArticlePaper title="fav memes (so far)">
       <figure className={styles.sectionContainer}>
-        {memes.map((source) => (
+        {memes.map(({ id, source }) => (
           <img
+            key={id}
             src={source}
             alt="explorer meme"
             className={styles.sectionImage}

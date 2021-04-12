@@ -2,11 +2,15 @@ import React from 'react';
 
 import ProjectsTemplate from '../../common/ProjectsTemplate/ProjectsTemplate';
 
+import projectsData from './projectsData';
+
 const ProjectsDir = () => {
   return (
-    <div>
-      <ProjectsTemplate />
-    </div>
+    <>
+      {projectsData.map(({ id, sectionTitle, projects }) => (
+        <ProjectsTemplate key={id} title={sectionTitle} projects={projects} />
+      ))}
+    </>
   );
 };
 

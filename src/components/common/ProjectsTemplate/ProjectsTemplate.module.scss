@@ -104,8 +104,7 @@
     & .links {
       display: flex;
 
-      & .repository,
-      & .hosting {
+      & .link {
         box-shadow: 0.5rem 0.5rem 0.3rem rgba($dark, 0.5);
         background-color: $grey-dark-2;
         color: $blue-light;
@@ -138,7 +137,6 @@
       font-weight: $font-bold;
       padding: 0.5rem 1rem;
       margin: 0.3rem;
-      color: $red-light;
       background-color: $grey-light-1;
     }
   }

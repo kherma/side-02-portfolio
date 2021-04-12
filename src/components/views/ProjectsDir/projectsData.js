@@ -83,7 +83,7 @@ const data = [
         technologies: [
           { text: 'html', color: '#E96328', id: uuidv4() },
           { text: 'scss', color: '#C66493', id: uuidv4() },
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
         ],
       },
       {
@@ -96,7 +96,7 @@ const data = [
         technologies: [
           { text: 'html', color: '#E96328', id: uuidv4() },
           { text: 'scss', color: '#C66493', id: uuidv4() },
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
         ],
       },
       {
@@ -109,7 +109,7 @@ const data = [
         technologies: [
           { text: 'html', color: '#E96328', id: uuidv4() },
           { text: 'scss', color: '#C66493', id: uuidv4() },
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
         ],
       },
     ],
@@ -139,7 +139,7 @@ const data = [
         hostLink: 'https://loving-nightingale-601569.netlify.app/',
         githubLink: 'https://github.com/kherma/practice-12-mapty-oop',
         technologies: [
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
           { text: 'geolocation', color: '#D5483B', id: uuidv4() },
         ],
       },
@@ -154,7 +154,7 @@ const data = [
         technologies: [
           { text: 'html', color: '#E96328', id: uuidv4() },
           { text: 'css', color: '#28A4D9', id: uuidv4() },
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
         ],
       },
       {
@@ -179,7 +179,7 @@ const data = [
         technologies: [
           { text: 'html', color: '#E96328', id: uuidv4() },
           { text: 'css', color: '#28A4D9', id: uuidv4() },
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
         ],
       },
       {
@@ -216,7 +216,7 @@ const data = [
         technologies: [
           { text: 'html', color: '#E96328', id: uuidv4() },
           { text: 'css', color: '#28A4D9', id: uuidv4() },
-          { text: 'javascript', color: '#F7D137', id: uuidv4() },
+          { text: 'javascript', color: '#debc35', id: uuidv4() },
         ],
       },
     ],

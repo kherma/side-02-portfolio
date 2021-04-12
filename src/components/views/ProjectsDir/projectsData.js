@@ -51,7 +51,7 @@ const data = [
         id: uuidv4(),
         type: 'full',
         rwd: false,
-        imageSource: bootcamp5,
+        imageSource: filler,
         githubLink:
           'https://github.com/kherma/school-15-express-almost-spotify',
         technologies: [
@@ -63,13 +63,25 @@ const data = [
         id: uuidv4(),
         type: 'front',
         rwd: false,
-        imageSource: bootcamp4,
+        imageSource: bootcamp5,
         hostLink: 'https://react-and-redux-to-do-list.herokuapp.com/',
         githubLink: 'https://github.com/kherma/school-07-react-starter',
         technologies: [
           { text: 'react', color: '#5FD3F2', id: uuidv4() },
           { text: 'router', color: '#C44043', id: uuidv4() },
           { text: 'redux', color: '#7249B6', id: uuidv4() },
+        ],
+      },
+      {
+        id: uuidv4(),
+        type: 'front',
+        rwd: true,
+        imageSource: bootcamp4,
+        hostLink: 'https://kherma.github.io/project-01-admin-panel/',
+        githubLink: 'https://github.com/kherma/project-01-admin-panel',
+        technologies: [
+          { text: 'html', color: '#E96328', id: uuidv4() },
+          { text: 'scss', color: '#C66493', id: uuidv4() },
         ],
       },
       {

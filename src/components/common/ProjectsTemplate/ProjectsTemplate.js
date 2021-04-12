@@ -52,12 +52,22 @@ const ProjectsTemplate = ({ title, projects }) => {
                 </div>
                 <div className={styles.links}>
                   {hostLink && (
-                    <a href={hostLink} className={styles.link}>
+                    <a
+                      href={hostLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={styles.link}
+                    >
                       <FiLayout />
                     </a>
                   )}
                   {githubLink && (
-                    <a href={githubLink} className={styles.link}>
+                    <a
+                      href={githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={styles.link}
+                    >
                       <FiGithub />
                     </a>
                   )}

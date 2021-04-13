@@ -1,5 +1,4 @@
 @import '../../../styles/settings.scss';
-@import '../../../styles/mixins.scss';
 
 .pageLayout {
   display: grid;
@@ -8,7 +7,7 @@
 }
 
 .pageMain {
-  background-color: #f4f4f4;
+  background-color: $grey-light-1;
   overflow: auto;
   padding: 5rem;
 }

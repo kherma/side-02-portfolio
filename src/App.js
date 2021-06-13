@@ -5,31 +5,41 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // Views
 // ===========
 import MainLayout from './components/layout/MainLayout/MainLayout';
-import PersonalData from './components/views/PersonalData/PersonalData';
+
+const PersonalData = lazy(() =>
+  import(
+    /* webpackPrefetch: true */ './components/views/PersonalData/PersonalData'
+  )
+);
 
 const Styleguide = lazy(() =>
-  import('./components/views/Styleguide/Styleguide')
+  import(/* webpackPrefetch: true */ './components/views/Styleguide/Styleguide')
 );
+
 const AdditionalInfo = lazy(() =>
-  import('./components/views/AdditionalInfo/AdditionalInfo')
+  import(
+    /* webpackPrefetch: true */ './components/views/AdditionalInfo/AdditionalInfo'
+  )
 );
 
 const ProjectsDir = lazy(() =>
-  import('./components/views/ProjectsDir/ProjectsDir')
+  import(
+    /* webpackPrefetch: true */ './components/views/ProjectsDir/ProjectsDir'
+  )
 );
 
 const App = () => {
   return (
     <BrowserRouter>
       <MainLayout>
-        <Switch>
-          <Suspense fallback={<h2>Loading Page...</h2>}>
+        <Suspense fallback={<h2>Loading Page...</h2>}>
+          <Switch>
             <Route exact path="/" component={PersonalData} />
             <Route path="/styleguide" component={Styleguide} />
             <Route path="/additionalinfo" component={AdditionalInfo} />
             <Route path="/projects" component={ProjectsDir} />
-          </Suspense>
-        </Switch>
+          </Switch>
+        </Suspense>
       </MainLayout>
     </BrowserRouter>
   );

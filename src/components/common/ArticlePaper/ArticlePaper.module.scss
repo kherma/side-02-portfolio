@@ -5,10 +5,15 @@
   @include paper;
   padding: 4rem;
   margin-bottom: 4rem;
-  opacity: 0;
-  transform: translateY(100%);
-  animation: onshow 1s forwards;
+  transform: translateY(20rem);
+  animation: onshow 1.2s forwards;
   animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+
+  & > * {
+    opacity: 0;
+    animation: onshow 1.2s forwards;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
 }
 
 @keyframes onshow {
